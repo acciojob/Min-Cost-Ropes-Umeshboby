@@ -1,18 +1,9 @@
 function mincost(arr)
 { 
 //write your code here
-// return the min cost
-	function getFormvalue() {
-var x=document.getElementById("form1");
-let name = ""
-for (var i=0;i<x.length;i++) {
-if (x.elements[i].value!='Submit')
-name += x.elements[i].value + " "
-}
+/var x = document.getElementById("form1");                                                                                                                                          let name = ""; initializes an empty string                                                                                                                                                          Inside the loop, if (x.elements[i].value != 'Submit') checks if the value of the current form element is not equal to the string 'Submit'.
 
-alert(name.substring(0,name.length-1));
-}
-  
-}
+If the condition is true, the value of the current form element is concatenated to the name string with a space: name += x.elements[i].value + " ";.
+
 
 module.exports=mincost;
